@@ -35,24 +35,101 @@
     font-style: italic;
 }
 
-html { box-sizing: border-box; font-size: 350%;}
+/*common styles*/
 
-*, *:before, *:after{ box-sizing: inherit; }
+*, *:before, *:after { box-sizing: inherit; }
 
-p.qq {
-	font-family: 'Roboto', sans-serif;
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+
+h1 { font-size: 32px; /*useless?*/ }
+
+h2 { font-size: 25px; }
+
+h3 { font-size: 15px; }
+
+a {
+	color: inherit;
+	text-decoration: none;
 }
-p.ww {
-	font-family: 'Roboto', sans-serif;
+
+p {	
+	font-size: 15px;
+	color: #8e8e8e;
+}
+
+img {
+	width: 100%;
+    height: auto;
+}
+
+.body {
+	font-family: 'Roboto';
+	text-transform: uppercase;
+	color: #131316;
+}
+
+.primary { color: #ffe600; }
+
+.button { text-transform: uppercase; }
+
+/*direct styles*/
+
+.main-wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+/*greeting*/
+
+.html, 
+.html .body, 
+.html .body .main-wrapper,
+.html .body .main-wrapper .greeting { height: 100%; }
+
+.greeting {
+	display:table;
+	width:100%;
+	text-align: center;
+	background-color: #89898b;
+}
+
+.greeting__main-logo-holder {
+	width: 89px;
+	margin: 0 auto;
+}
+
+.greeting__minor-heading {
+	margin-top: 51px;
+	font-size: 15px;
+	color: white;
+}
+
+.greeting__lead-heading {
+	margin-top: 49px;
+	font-size: 40px;
 	font-weight: 300;
 }
-p.ee {
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-    font-style: italic;
+
+.greeting__button-holder {
+	margin-top: 111px;
 }
 
+.greeting__button {
+	padding: 22px 80px 23px 85px;
+	font-size: 15px;
+	border: 1px solid #ffe600;
+	color: white;
+	background: transparent;
+}
 
+.greeting__slide-down {
+	width: 38px;
+	height: 20px;
+	display: block;
+	margin: 49px auto 0;
+	background: url("../images/slide-down-arrow.png") no-repeat;
+
+}
 
 
 
