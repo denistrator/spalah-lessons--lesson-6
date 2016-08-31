@@ -295,14 +295,16 @@ div[class $="img-holder"] {
 /*accent-block*/
 
 .accent-block__heading {
-	margin-top: 235px;
+	/*margin-top: 235px;*/
+	margin-top: 21.349%;
 	font-weight: 300;
 	font-style: italic;
 	line-height: 40px;
 }
 
 .accent-block__minor-text {
-	margin-bottom: 235px;
+	/*margin-bottom: 235px;*/
+	margin-bottom: 21.349%;
 	font-weight: 400;
 	color: white;
 }
