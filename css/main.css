@@ -603,7 +603,18 @@ div[class $="img-holder"] {
 	background-position: -62px -17px;
 }
 
+/*media*/
 
+@media screen and (max-width: 1180px){
+	.main-wrapper {
+		min-width: 100%;
+	}
+
+	.container {
+		width: 98%;
+		margin: 0 auto;	
+	}
+}
 
 
 
