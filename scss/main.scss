@@ -154,7 +154,7 @@ div[class $="img-holder"] {
 }
 
 .greeting__main-logo:hover {
-	transform: rotate(1080deg);
+	transform: rotate(1800deg);
 }
 
 .greeting__minor-heading {
@@ -250,7 +250,7 @@ div[class $="img-holder"] {
 	font-size: 15px;
 	color: $slight-text-color;
 	-webkit-transition: all .2s linear;	
-			transition: all .2s linear;	
+			transition: all .2s linear;
 }
 
 /*section*/
@@ -300,17 +300,26 @@ div[class $="img-holder"] {
 
 /*accent-block*/
 
+.accent-block {
+	display: table;
+	width: 100%;
+}
+
+.accent-block__inner {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 21.349% 0;
+}
+
 .accent-block__heading {
-	/*margin-top: 235px;*/
-	margin-top: 21.349%;
+	margin-top: 0;
 	font-weight: 300;
 	font-style: italic;
 	line-height: 40px;
 }
 
 .accent-block__minor-text {
-	/*margin-bottom: 235px;*/
-	margin-bottom: 21.349%;
+	margin-bottom: 0;
 	font-weight: 400;
 	color: white;
 }
@@ -420,14 +429,13 @@ div[class $="img-holder"] {
 .clients {
 	@extend %base-list-styles;
 	text-align: justify;
+	&:after {
+		width: 100%;
+	    height: 0;
+	    content: '';
+	    display: inline-block;
+	}
 }
-
-.clients:after {
-    width: 100%;
-    height: 0;
-    content: '';
-    display: inline-block;
-} 
 
 .clients__elem {
 	width: 16.66%;
@@ -668,14 +676,6 @@ div[class $="img-holder"] {
 }
 
 @media screen and (max-width: 768px) {
-	.section__heading {
-	    margin-top: 80px;
-	}
-
-	.section__minor-text {
-		margin-top: 20px;
-	}
-	
 	.features-holder {
 		margin-top: 75px;
    	 margin-bottom: 70px;
