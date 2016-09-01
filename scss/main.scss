@@ -1,49 +1,15 @@
 // variables
-	// colors
+
+	// fonts
 	$main-font-name: "Roboto";
+
+	// colors
 	$main-text-color: #131316;
 	$dark-bg-color: #131316;
 	$inverse-color: #424245;
 	$primary-text-color: #ffe600;
 	$primary-bg-color: #ffeb33;
 	$slight-text-color: #8e8e8e;
-
-/*fonts*/
-
-@font-face {
-    font-family: $main-font-name;
-    src: local($main-font-name +" Regular"),
-    	 local($main-font-name +"-Regular"),
-    	 local($main-font-name),
-    	 url('../fonts/roboto-400-normal.woff2') format('woff2'),
-    	 url('../fonts/roboto-400-normal.woff') format('woff'),
-    	 url('../fonts/roboto-400-normal.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: $main-font-name;
-    src: local($main-font-name +" Light"),
-    	 local($main-font-name +"-Light"),
-    	 url('../fonts/roboto-300-normal.woff2') format('woff2'),
-    	 url('../fonts/roboto-300-normal.woff') format('woff'),
-    	 url('../fonts/roboto-300-normal.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: $main-font-name;
-    src: local($main-font-name +" Light Italic"),
-    	 local($main-font-name +"-LightItalic"),
-    	 local($main-font-name +"-Light-Italic"),
-    	 url('../fonts/roboto-300-italic.woff2') format('woff2'),
-    	 url('../fonts/roboto-300-italic.woff') format('woff'),
-    	 url('../fonts/roboto-300-italic.ttf') format('truetype');
-    font-weight: 300;
-    font-style: italic;
-}
 
 /*common styles*/
 
