@@ -11,6 +11,30 @@
 	$primary-bg-color: #ffeb33;
 	$slight-text-color: #8e8e8e;
 
+// placeholder selectors
+
+%base-list-styles {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+	list-style: none;
+}
+
+%base-list-styles li {
+		font-size: initial;
+}
+
+%clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
 /*common styles*/
 
 html { box-sizing: border-box; }
@@ -183,7 +207,10 @@ div[class $="img-holder"] {
 }
 
 /*main-header*/
-.main-header { padding: 40px 2.134% 40px 1.024%; }
+.main-header {
+	@extend %clearfix;
+	padding: 40px 2.134% 40px 1.024%;
+}
 
 .main-header__logo-holder {
 	width: 186px;
@@ -193,15 +220,11 @@ div[class $="img-holder"] {
 /*main-navigation*/
 
 .navigation__elems-holder {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	font-size: 0;
+	@extend %base-list-styles;
 }
 
 .navigation__elem {
 	display: inline-block;
-	font-size: initial;
 	margin-left: 13px;
 }
 
@@ -245,14 +268,11 @@ div[class $="img-holder"] {
 }
 
 .features {
-	list-style: none;
-	padding-left: 0;
-	font-size: 0;
+	@extend %base-list-styles;
 }
 
 .features__elem {
 	display: inline-block;
-	font-size: initial;
 	vertical-align: top;
 	width: 33%;
 }
@@ -299,16 +319,13 @@ div[class $="img-holder"] {
 .portfolio-holder { margin-top: 118px; }
 
 .porfolio__elems-holder {
-	font-size: 0;
+	@extend %base-list-styles;
 	margin: -15px -15px;
-	padding: 0;
-	list-style: none;
 	overflow: hidden;
 }
 
 .card {
 	position: relative;
-	font-size: initial;
 	width: 25%;
 	padding: 1.28%;
 	display: inline-block;
@@ -398,10 +415,7 @@ div[class $="img-holder"] {
 .clients-holder { margin-top: 132px; }
 
 .clients {
-	font-size: 0;
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	@extend %base-list-styles;
 	text-align: justify;
 }
 
@@ -413,7 +427,6 @@ div[class $="img-holder"] {
 } 
 
 .clients__elem {
-	font-size: initial;
 	width: 16.66%;
 	margin-bottom: 128px;
 	display: inline-block;
@@ -510,7 +523,10 @@ div[class $="img-holder"] {
 
 /*footer*/
 
-.main-footer { padding: 40px 0; }
+.main-footer {
+	@extend %clearfix;
+	padding: 40px 0;
+}
 
 .main-footer__copyright {
 	text-align: initial;
@@ -524,16 +540,12 @@ div[class $="img-holder"] {
 .socials-holder { float: right; }
 
 .socials {
-	list-style: none;
-	font-size: 0;
+	@extend %base-list-styles;
 	float: right;
-	margin: 0;
-	padding: 0;
 }
 
 .socials__elem {
 	display: inline-block;
-	font-size: initial;
 	vertical-align: middle;
 }
 
@@ -680,45 +692,4 @@ div[class $="img-holder"] {
 	.contact-form__elem { 
 		margin-top: 10px;
 	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  helper classes */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
 }
