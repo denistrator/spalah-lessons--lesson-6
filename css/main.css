@@ -235,27 +235,26 @@ div[class$="img-holder"] {
   margin-left: 13px;
 }
 
+.navigation__elem:hover .navigation__link {
+  color: initial;
+}
+
 .navigation__elem:first-child {
   margin-left: 0;
+}
+
+.navigation__elem_active .navigation__link {
+  border-color: #ffe600;
+  color: initial;
 }
 
 .navigation__link {
   display: block;
   padding: 13.5px 19px 13.5px 27px;
+  border: 1px solid transparent;
   font-size: 15px;
   color: #8e8e8e;
   transition: all .2s linear;
-}
-
-.navigation__link:hover {
-  color: initial;
-}
-
-.navigation__link_active {
-  padding-top: 12.5px;
-  padding-bottom: 12.5px;
-  border: 1px solid #ffe600;
-  color: initial;
 }
 
 /*section*/
