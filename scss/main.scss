@@ -169,7 +169,7 @@ div[class $="img-holder"] {
 	color: $primary-text-color;
 }
 
-.greeting__button-holder { margin-top: 111px; }
+.greeting__button-holder { margin-top: 9.479%; }
 
 .greeting__button {
 	padding: 22px 80px 23px 85px;
@@ -216,8 +216,143 @@ div[class $="img-holder"] {
 
 /*main-navigation*/
 
-.navigation__elems-holder {
-	@extend %base-list-styles;
+#menu_button { display: none; }
+
+#menu_button:checked ~ .main-navigation-holder { display: block; }
+
+.hamburger_menu_btn {
+	display: none;
+	position: relative;
+	float: right;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 46px;
+    height: 46px;
+    border: 4.6px solid #4f4400;
+    border-radius: 50%;
+	cursor: pointer;
+	background-color: #ffe600;
+	background-image: url("../images/menu-btn-bg.png");
+	background-size: cover;
+	-webkit-transition: all 1.2s linear;
+	        transition: all 1.2s linear;
+	&:focus {
+		outline: none;
+	}
+}
+
+#menu_button:checked ~ .hamburger_menu_btn {
+	transform: rotate(360deg);
+	.hamburger_menu_btn__cicrle {
+		background-color: #4f4400;
+	}
+
+	.hamburger_menu_btn__cicrle-1 {
+		height: 8.5px;
+	    width: 8.5px;
+	    top: 7px;
+	    left: 22px;
+	}
+
+	.hamburger_menu_btn__cicrle-2 {
+		width: 10.5px;
+	    height: 10.5px;
+	    top: 4.5px;
+	    left: 9px;
+	}
+
+	.hamburger_menu_btn__cicrle-3 {
+		width: 9px;
+	    height: 9px;
+	    top: 27px;
+	    left: 24px;
+	}
+
+	.hamburger_menu_btn__cicrle-4 {
+		width: 9px;
+	    height: 9px;
+	    top: 29px;
+	    left: 3px;
+	}
+
+	.hamburger_menu_btn__cicrle-5 {
+		width: 5px;
+	    height: 5px;
+	    top: 28px;
+	    left: 16px;
+	}
+
+	.hamburger_menu_btn__cicrle-6 {
+		width: 3.5px;
+	    height: 3.5px;
+	    top: 19px;
+	    left: 29px;
+	}
+
+	.hamburger_menu_btn__cicrle-7 {
+		width: 3px;
+	    height: 3px;
+	    top: 20px;
+	    left: 2px;
+	}
+}
+
+.hamburger_menu_btn__cicrle {
+	display: block;
+	position: absolute;
+	width: 0px;
+	height: 0px;
+	top: 37px / 2 - 0 / 2;
+	left: 37px / 2 - 0 / 2;
+	border-radius: 50%;
+	background-color: #4f4400;
+	-webkit-transition: all 1.2s linear;
+	        transition: all 1.2s linear;
+}
+
+.hamburger_menu_btn__cicrle-1 {
+	background-color: #FFFFFF;
+}
+
+.hamburger_menu_btn__cicrle-2 {
+	background-color: #FCFF00;
+}
+
+.hamburger_menu_btn__cicrle-3 {
+	background-color: #FFFFFF;
+}
+
+.hamburger_menu_btn__cicrle-4 {
+	background-color: #FCFF00;
+}
+
+.hamburger_menu_btn__cicrle-5 {
+	background-color: #FFFFFF;
+}
+
+.hamburger_menu_btn__cicrle-6 {
+	background-color: #FCFF00;
+}
+
+.hamburger_menu_btn__cicrle-7 {
+	background-color: #FFFFFF;
+}
+
+.hamburger_menu_btn-text {
+	display: none;
+	float: right;
+	cursor: pointer;
+}
+
+.hamburger_menu_btn-text-text {
+	position: relative;
+    top: 3px;
+    left: -12px;
+    color: #4f4400;
+    &:hover {
+		color: #998600;
+	}
 }
 
 .navigation__elem {
@@ -231,6 +366,10 @@ div[class $="img-holder"] {
 	&:first-child {
 		margin-left: 0;
 	}
+}
+
+.navigation__elems-holder {
+	@extend %base-list-styles;
 }
 
 .navigation__elem_active {
@@ -252,7 +391,7 @@ div[class $="img-holder"] {
 
 /*section*/
 
-.section__heading { margin-top: 117px; }
+.section__heading { margin-top: 9.99%; }
 
 .section__minor-text {
 	margin-top: 30px;
@@ -263,8 +402,8 @@ div[class $="img-holder"] {
 /*features*/
 
 .features-holder {
-	margin-top: 135px;
-	margin-bottom: 163px;
+	margin-top: 11.528%;
+	margin-bottom: 13.919%;
 }
 
 .features {
@@ -325,7 +464,7 @@ div[class $="img-holder"] {
 
 .portfolio { overflow: hidden; }
 
-.portfolio-holder { margin-top: 118px; }
+.portfolio-holder { margin-top: 10.076%; }
 
 .porfolio__elems-holder {
 	@extend %base-list-styles;
@@ -407,7 +546,7 @@ div[class $="img-holder"] {
 	width: 40px;
     height: 20px;
 	display: block;
-	margin: 27px auto 115px;
+	margin: 27px auto 9.82%;
 	background: url("../images/main_sprite.png") no-repeat;
 	background-position: -40px -34px;
 	-webkit-transition: all .2s cubic-bezier(0, 0.66, 0, 4.54);
@@ -421,7 +560,7 @@ div[class $="img-holder"] {
 
 /*clients*/
 
-.clients-holder { margin-top: 132px; }
+.clients-holder { margin-top: 11.272%; }
 
 .clients {
 	@extend %base-list-styles;
@@ -436,7 +575,7 @@ div[class $="img-holder"] {
 
 .clients__elem {
 	width: 16.66%;
-	margin-bottom: 128px;
+	margin-bottom: 10.93%;
 	display: inline-block;
 	vertical-align: middle;
 }
@@ -463,7 +602,7 @@ div[class $="img-holder"] {
 
 /*contact-form*/
 
-.contact-form-holder { margin: 118px 0 112px; }
+.contact-form-holder { margin: 10.076% 0 9.564%; }
 
 .contact-form {
 	width: 82.835%;
@@ -533,7 +672,7 @@ div[class $="img-holder"] {
 
 .main-footer {
 	@extend %clearfix;
-	padding: 40px 0;
+	padding: 3.415% 0;
 }
 
 .main-footer__copyright {
@@ -648,7 +787,7 @@ div[class $="img-holder"] {
 
 	.features__elem {
 		display: block;
-		width: 85%;
+		width: 100%;
 		margin-top: 25px;
 		text-align: left;
 	}
@@ -668,23 +807,87 @@ div[class $="img-holder"] {
 }
 
 @media screen and (max-width: 768px) {
-	.features-holder {
-		margin-top: 75px;
-   	 margin-bottom: 70px;
+	.greeting__slide-down {
+		display: none;
 	}
 
-	.card__heading {
-		font-size: 11px;
-		margin-bottom: 10px;
+	.hamburger_menu_btn {
+		display: block;
 	}
 
-	.card__desc {
-		font-size: 10px;
+	.hamburger_menu_btn-text {
+		display: block;
+	}
+
+	.main-navigation-holder {
+		display: none;
+		clear: both;
+		margin-top: 12px;
+	}
+
+	.navigation__elem {
+		display:block;
+	}
+	
+	.card {
+		width: 33.33%;
+	}
+
+	.main-footer__copyright {
+		float: none;
+		text-align: inherit;
 	}
 }
 
 @media screen and (max-width: 480px) {
+	.greeting__main-logo-holder {
+		width: 120px;
+		margin: 0 auto;
+	}
 	.contact-form__elem { 
 		margin-top: 10px;
+	}
+
+	.features {
+		margin-left: 0;
+	}
+
+	.features__elem-inner {
+		margin: 0;
+		padding: 0 5%;
+	}
+
+	.features__title {
+		line-height: 190%;
+	}
+
+	.card {
+		width: 50%;
+	}
+
+	.clients__elem {
+		width: 33.33%;
+		margin-bottom: 10.93%;
+	}
+
+	.contact-form {
+		width: 95%;
+	}
+
+	.contact-form__elem_half-with {
+		width: 100%;
+		display: block;
+	}
+
+	.contact-form__elem_half-with:first-child {	padding-right: 0; }
+	.contact-form__elem_half-with + .contact-form__elem_half-with {	padding-left: 0; }
+
+	.socials {
+		float: none;
+		margin-top: 15px;
+	}
+
+	.socials__link {
+		margin: 0 15px;
 	}
 }
