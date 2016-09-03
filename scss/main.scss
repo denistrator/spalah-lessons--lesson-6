@@ -137,6 +137,7 @@ div[class $="img-holder"] {
 .greeting {
 	display:table;
 	width:100%;
+	min-height: 100vh;
 	background-color: #89898b;
 }
 
@@ -239,8 +240,8 @@ div[class $="img-holder"] {
 }
 
 #menu_button:checked ~ .hamburger_menu_btn .hamburger_menu_btn__text-holder {
-	left: 100%; 
-	opacity: 0;
+	transform: translate(100%, -100%); 
+	opacity: .5;
 	transition: all .5s linear;
 	transition-delay: 0s;
 }
@@ -273,11 +274,11 @@ div[class $="img-holder"] {
 #menu_button:checked ~ .hamburger_menu_btn {
 	background-image: url("../images/menu-btn-bg.png");
 	background-size: cover;
-	background-repeat: none;
+	background-repeat: no-repeat;
 	transform: rotate(360deg);
 	transition: transform 1.2s linear;
 	transition-delay: .5s;
-	
+
 	.hamburger_menu_btn__cicrle {
 		background-color: $dark-moon;
 		transition-delay: .5s;
